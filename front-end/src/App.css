@@ -1,38 +1,122 @@
 .App {
+  margin: 0;
+  padding: 18px 18px;
+  background-color: #E1E0E0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2,
+h3 {
+
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.instructions-p {
+  font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.log-in-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.get-journal-holder,
+.add-entry-button,
+.log-in-button {
+  display: flex;
+  justify-content: center;
+}
+
+.new-entry-text {
+  padding: 10px 0 10px 0;
+}
+
+.mood-item,
+.accomplishment_item {
+  padding-left: 15px;
+}
+
+.textbox {
+  margin: 15px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+textarea {
+  width: 300px;
+}
+
+
+.entrie {
+  padding: 10px;
+  margin: 30px 30px;
+  display:flex;
+  flex-direction: column;
+
+  border: 2px darkgray solid;
+}
+
+.entrie > div {
+  margin-bottom: 7px;
+}
+
+.entrie-row-1 {
+  display: flex;
+  margin-bottom: 5px;
+}
+.entrie-row-1 > button {
+  margin-left: 15px;
+}
+
+.entrie-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .journal-form-labels {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .journal-form-labels {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .journal-form-labels>* {
+    margin: 5px 10px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .journal-form-labels {
+    display: flex;
+    flex-direction: row;
+  }
+  .entrie {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .new-entry-text, .journal-form-labels {
+    margin-left: 17%;
   }
 }
