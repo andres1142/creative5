@@ -244,7 +244,7 @@ function App() {
     // render results
     return (
         <div className='App'>
-            <h2>Welcome to the page were you can keep track your journal, goals and Accomplishments in one place.</h2>
+            <h1>My Journal</h1>
 
             <p className='instructions-p'>
                 You are going to enter a username and a password to access our database. If you don't
